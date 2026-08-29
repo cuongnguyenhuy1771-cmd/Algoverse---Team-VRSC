@@ -7,7 +7,7 @@ rich==13.9.4
 
 # TODO: replace with the exact version you're running, e.g. via
 # `pip show inspect-ai`. The line format is: inspect-ai==X.Y.Z
-inspect-ai==<version>
+inspect-ai==0.3.260
 
 # Needs to be >=3 -- older 1.x/2.x releases don't work with the
 # OpenRouter API key path this pipeline uses. (The source notebook
