@@ -1,0 +1,30 @@
+# Pinned per the original research notebook's setup cell
+# (pipeline/01_environment_setup.py) -- reproducibility over
+# silently drifting APIs, except where noted below.
+protobuf==5.29.5
+click==8.1.8
+rich==13.9.4
+
+# TODO: replace with the exact version you're running, e.g. via
+# `pip show inspect-ai`. The line format is: inspect-ai==X.Y.Z
+inspect-ai==<version>
+
+# Needs to be >=3 -- older 1.x/2.x releases don't work with the
+# OpenRouter API key path this pipeline uses. (The source notebook
+# originally pinned <3; that cap is intentionally dropped here.)
+openai>=3
+
+datasets>=3,<5
+jsonlines>=4,<5
+scipy>=1.11,<2
+statsmodels>=0.14,<1
+pandas>=2,<3
+numpy>=1.26,<3
+matplotlib>=3.8,<4
+
+# ImpossibleBench is NOT on PyPI, so it has no line here. Clone and
+# install it yourself (see README > Installation), then record the
+# commit you used in IMPOSSIBLEBENCH_REPO_COMMIT in
+# pipeline/01_environment_setup.py:
+#   git clone https://github.com/safety-research/impossiblebench.git
+#   cd impossiblebench && pip install -e . && cd ..

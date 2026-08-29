@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local runtime tree created by pipeline/01_environment_setup.py
+# (PROJECT_ROOT = ~/rh_contagion_final by default -- ignoring a
+# local copy too in case it's ever created inside the repo)
+rh_contagion_final/
+results/
+
+# Your manual clone of the ImpossibleBench repo (see README > Installation) --
+# it's a separate upstream project, not part of this repo
+impossiblebench/
+
+# Jupyter
+.ipynb_checkpoints/
