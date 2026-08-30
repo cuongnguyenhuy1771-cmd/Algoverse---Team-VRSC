@@ -81,7 +81,7 @@ isn't published on PyPI, so it's cloned and installed in editable mode
 rather than pip-installed from `requirements.txt`:
 
 ```bash
-# 1. Clone this repo
+# 1. Clone this repo if you are not using github codespaces
 git clone <this-repo-url>
 cd <this-repo>
 
